@@ -1,0 +1,16 @@
+.typewriter-text {
+    font-size: 2rem;
+    font-weight: bold;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
