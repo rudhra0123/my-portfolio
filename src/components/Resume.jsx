@@ -6,12 +6,10 @@ import Particle from "../components/Particle";
 import pdf from "../assets/22A91A0584(resume).pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
+// const pdf= require("../assets/22A91A0584(resume).pdf");
  
- 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  "pdfjs-dist/build/pdf.worker.min.js",
-  import.meta.url
-).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 const Resume = () => {
   const [width, setWidth] = useState(window.innerWidth);

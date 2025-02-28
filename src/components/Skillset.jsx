@@ -54,7 +54,7 @@ const skills = [
 const Skillset = () => {
   return (
     <div className="skills-container">
-      <div className="stars"></div>
+      {/* <div className="stars"></div> */}
       <h2 className="skills-title">My Tech Stack</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (

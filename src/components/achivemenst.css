@@ -1,0 +1,135 @@
+/* Main Container */
+.achievements-container {
+    text-align: center;
+    padding: 50px 20px;
+    /* background-color: #2d005c; */
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+/* Background Animation */
+.animated-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background: radial-gradient(circle, rgba(117, 0, 250, 0.3) 10%, rgba(45, 0, 92, 0.8) 90%); */
+    animation: pulseBg 5s infinite alternate;
+    z-index: -1;
+}
+
+@keyframes pulseBg {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.2); }
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Education Heading */
+.education-heading {
+    color: #e8e4dd;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+/* Timeline Wrapper */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+/* Middle Vertical Line */
+.middle-line {
+    position: absolute;
+    width: 4px;
+    background-color: #7500fa;
+    z-index: 1;
+}
+
+/* Break the Middle Line */
+.top-line {
+    height: 45%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-line {
+    height: 45%;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Achievement & Education Cards */
+.achievement-card {
+    width: 280px;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgba(117, 0, 250, 0.5);
+    position: relative;
+    margin: 30px 0;
+    text-align: left;
+}
+
+/* Education Cards - Same Style as Achievements */
+.education-card {
+    box-shadow: 0px 0px 10px rgba(117, 0, 250, 0.5);
+}
+
+/* Left and Right Positioning */
+.left {
+    align-self: flex-start;
+}
+
+.right {
+    align-self: flex-end;
+}
+
+/* Connector Line from Cards to Middle */
+.line-connector {
+    position: absolute;
+    height: 2px;
+    background-color: #7500fa;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-connector {
+    right: -50px;
+}
+
+.right-connector {
+    left: -50px;
+}
+
+/* Download Button */
+.download-btn {
+    background: #7500fa;
+    color: #0a0a0a;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    color: white;
+}

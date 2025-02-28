@@ -41,7 +41,7 @@ function NavBar() {
         <Navbar.Brand href="/" className="d-flex">
           {/* <img src={logo} className="img-fluid logo" alt="brand" />
            */}
-           <div>Siva  Rama  Raju</div>
+          <div>Siva  Rama  Raju</div>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -84,7 +84,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/resume"
@@ -92,7 +92,17 @@ function NavBar() {
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
+            </Nav.Item> */}
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/achievements"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} /> Achievements
+              </Nav.Link>
             </Nav.Item>
+
 
             <Nav.Item>
               <Nav.Link

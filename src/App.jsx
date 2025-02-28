@@ -11,7 +11,8 @@ import Home from './components/Home/Home.jsx'
 import Skill from './components/Skillset.jsx';
 import Project from './components/Projects.jsx'
 import Resume from './components/Resume.jsx';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+import Achivements from "./components/achievements.jsx";
 
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
@@ -44,7 +45,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/skillset" element={<Skill />} />
           <Route path="/project" element={<Project />} />
-          <Route path="/resume" element={<Resume />} />
+          {/* <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/achievements" element={<Achivements />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
